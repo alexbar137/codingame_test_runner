@@ -23,5 +23,27 @@ class TestGenericFileSaver(TestCase):
 
   def test_constructor_folders_created(self):
     file_saver = GenericFileSaver(self.BASE_DIR)
-    self.assertTrue(os.path.exists(self.IN_PATH))
-    self.assertTrue(os.path.exists(self.OUT_PATH))
+    self.assertTrue(os.path.exists(self.IN_PATH), "IN dir is not created")
+    self.assertTrue(os.path.exists(self.OUT_PATH), "OUT dir is not created")
+
+  def test_save_out_file(self):
+    content = ["abc", "def", "ghi"]
+    name = "test_out"
+    expected_location = self.OUT_PATH + "/" + name
+    file_saver = GenericFileSaver(self.BASE_DIR)
+    file_saver.save_out_file(name, content)
+    self.assertTrue(os.path.exists(expected_location), "File is not saved")
+    with open(expected_location) as f:
+      strings = f.readlines()
+      self.assertEqual(content[1], strings[1])
+
+  def test_save_in_file(self):
+    content = ["abc", "def", "ghi"]
+    name = "test_in"
+    expected_location = self.IN_PATH + "/" + name
+    file_saver = GenericFileSaver(self.BASE_DIR)
+    file_saver.save_in_file(name, content)
+    self.assertTrue(os.path.exists(expected_location), "File is not saved")
+    with open(expected_location) as f:
+      strings = f.readlines()
+      self.assertEqual(content[1], strings[1])

@@ -6,9 +6,9 @@ class FileSaverInterface(ABC):
     super().__init__()
 
   @abstractmethod
-  def save_in_file(self, path: str, content: List[str]) -> None:
+  def save_in_file(self, name: str, content: List[str]) -> None:
     pass
 
   @abstractmethod
-  def save_out_file(self, path: str, content: List[str]) -> None:
+  def save_out_file(self, name: str, content: List[str]) -> None:
     pass

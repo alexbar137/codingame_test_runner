@@ -12,10 +12,10 @@ class GenericFileSaver(FileSaverInterface):
     self.OUT_DIR = self.BASE_DIR + "/out"
     self.create_folders()
 
-  def save_out_file(self, path: str, content: List[str]) -> None:
+  def save_out_file(self, name: str, content: List[str]) -> None:
     pass
 
-  def save_in_file(self, path: str, content: List[str]) -> None:
+  def save_in_file(self, name: str, content: List[str]) -> None:
     pass
 
   def create_folders(self) -> None:
