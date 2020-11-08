@@ -32,10 +32,10 @@ class TestGenericFileSaver(TestCase):
     expected_location = self.OUT_PATH + "/" + name
     file_saver = GenericFileSaver(self.BASE_DIR)
     file_saver.save_out_file(name, content)
-    self.assertTrue(os.path.exists(expected_location), "File is not saved")
+    self.assertTrue(os.path.exists(expected_location), "OUT file is not saved")
     with open(expected_location) as f:
       strings = f.readlines()
-      self.assertEqual(content[1], strings[1])
+      self.assertEqual(content[1], strings[1].strip())
 
   def test_save_in_file(self):
     content = ["abc", "def", "ghi"]
@@ -43,7 +43,7 @@ class TestGenericFileSaver(TestCase):
     expected_location = self.IN_PATH + "/" + name
     file_saver = GenericFileSaver(self.BASE_DIR)
     file_saver.save_in_file(name, content)
-    self.assertTrue(os.path.exists(expected_location), "File is not saved")
+    self.assertTrue(os.path.exists(expected_location), "IN file is not saved")
     with open(expected_location) as f:
       strings = f.readlines()
-      self.assertEqual(content[1], strings[1])
+      self.assertEqual(content[1], strings[1].strip())

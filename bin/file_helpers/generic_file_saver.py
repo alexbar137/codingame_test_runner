@@ -13,10 +13,17 @@ class GenericFileSaver(FileSaverInterface):
     self.create_folders()
 
   def save_out_file(self, name: str, content: List[str]) -> None:
-    pass
+    path = self.OUT_DIR + "/" + name
+    self.save_file(path, content)
 
   def save_in_file(self, name: str, content: List[str]) -> None:
-    pass
+    path = self.IN_DIR + "/" + name
+    self.save_file(path, content)
+
+  @staticmethod
+  def save_file(path: str, content: List[str]) -> None:
+    with open(path, 'w+') as f:
+      f.writelines("%s\r" % line for line in content)
 
   def create_folders(self) -> None:
     if not os.path.exists(self.BASE_DIR):
