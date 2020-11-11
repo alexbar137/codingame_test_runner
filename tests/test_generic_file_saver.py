@@ -18,8 +18,8 @@ class TestGenericFileSaver(TestCase):
       shutil.rmtree(self.OUT_PATH)
 
   def test_constructor_exception(self):
-    f = lambda: GenericFileSaver("wrong path")
-    self.assertRaises(FileExistsError, f)
+    failing_constructor = lambda: GenericFileSaver("wrong path")
+    self.assertRaises(FileExistsError, failing_constructor)
 
   def test_constructor_folders_created(self):
     file_saver = GenericFileSaver(self.BASE_DIR)

@@ -1,5 +1,6 @@
 from typing import List
 import requests
+from requests.exceptions import HTTPError
 
 from bin.interfaces.file_loader_interface import FileLoaderInterface
 
@@ -9,5 +10,7 @@ class CodingGameFileLoader(FileLoaderInterface):
 
   def load_file(self, file_id: str) -> List[str]:
     url = self.ROOT_ENDPOINT + file_id
-    return requests.get(url).text.splitlines()
-
+    response = requests.get(url)
+    if response.status_code != 200:
+      raise HTTPError("Couldn't find the requested resource")
+    return response.text.splitlines()
