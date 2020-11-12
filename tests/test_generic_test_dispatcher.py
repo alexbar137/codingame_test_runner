@@ -78,3 +78,7 @@ class TestGenericTestDispatcher(TestCase):
   def test_get_path_from_name_exception(self):
     f = lambda : self.test_dispatcher._get_path_from_name("test", "wrong")
     self.assertRaises(Exception,f)
+
+  def test_ad_base_dir_exception(self):
+    f = lambda : self.test_dispatcher._add_base_dir("/wrong/base/dir")
+    self.assertRaises(Exception, f)

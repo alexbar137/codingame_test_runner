@@ -9,6 +9,7 @@ class GenericTestDispatcher(TestDispatcherInterface):
 
   def __init__(self, options):
     super(GenericTestDispatcher, self).__init__(options)
+    self._add_base_dir(options["base_dir"])
 
   def get_puzzle(self, name: str, file_id: str):
     return self.__dispatch_files(name, file_id, "IN")
@@ -34,3 +35,8 @@ class GenericTestDispatcher(TestDispatcherInterface):
       self.FILE_SAVER.save_in_file(name, file)
     else:
       self.FILE_SAVER.save_out_file(name, file)
+
+  def _add_base_dir(self, base_dir):
+    if not path.exists(base_dir):
+      raise Exception("Base dir doesn't exist")
+    self.BASE_DIR = base_dir
