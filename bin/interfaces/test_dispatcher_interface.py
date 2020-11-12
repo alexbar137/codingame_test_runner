@@ -10,6 +10,7 @@ class TestDispatcherInterface(ABC):
     self.FILE_LOADER: FileLoaderInterface = options["file_loader"]
     self.FILE_SAVER: FileSaverInterface = options["file_saver"]
     self.FILE_READER: FileReaderInterface = options["file_reader"]
+    self.BASE_DIR: str = options["base_dir"]
 
   @abstractmethod
   def get_puzzle(self, name: str, file_id: str):

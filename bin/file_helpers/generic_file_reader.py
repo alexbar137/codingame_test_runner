@@ -12,3 +12,4 @@ class GenericFileReader(FileReaderInterface):
 
   def file_exists(self, file_path: str) -> bool:
     return path.exists(file_path)
+

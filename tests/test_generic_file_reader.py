@@ -4,6 +4,7 @@ from bin.file_helpers.generic_file_reader import GenericFileReader
 
 class FileLoaderTestCase(unittest.TestCase):
   def setUp(self):
+    self.BASE_DIR = "../tests/test_files"
     self.CORRECT_IN_PATH = "../tests/test_files/in/coefficients.txt"
     self.CORRECT_OUT_PATH = "../tests/test_files/out/coefficients.txt"
     self.file_loader = GenericFileReader()
