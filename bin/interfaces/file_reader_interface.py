@@ -8,7 +8,3 @@ class FileReaderInterface (ABC):
   @abstractmethod
   def read_file(self, path: str) -> List[str]:
     pass
-
-  @abstractmethod
-  def file_exists(self, path: str) -> bool:
-    pass

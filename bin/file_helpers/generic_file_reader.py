@@ -10,6 +10,3 @@ class GenericFileReader(FileReaderInterface):
       content = [x.strip() for x in content]
       return  content
 
-  def file_exists(self, file_path: str) -> bool:
-    return path.exists(file_path)
-

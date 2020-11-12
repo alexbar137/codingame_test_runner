@@ -1,6 +1,6 @@
 from unittest import TestCase
 from unittest.mock import patch, MagicMock
-from os import path
+import os.path
 
 from bin.interfaces.file_saver_interface import FileSaverInterface
 from bin.interfaces.file_reader_interface import FileReaderInterface
@@ -15,8 +15,8 @@ class TestGenericTestDispatcher(TestCase):
   @patch.multiple(FileReaderInterface, __abstractmethods__=set())
   @patch.multiple(FileSaverInterface, __abstractmethods__=set())
   def setUp(self) -> None:
-    current_dir = path.dirname(__file__)
-    base_dir = path.join(current_dir, "test_files", "dispatcher")
+    current_dir = os.path.dirname(__file__)
+    base_dir = os.path.join(current_dir, "test_files", "dispatcher")
     options = {
       "file_loader": FileLoaderInterface(),
       "file_reader": FileReaderInterface(),
@@ -30,8 +30,9 @@ class TestGenericTestDispatcher(TestCase):
     ]
     self.test_dispatcher = GenericTestDispatcher(options)
 
-  def test_get_puzzles_online(self):
-    self.test_dispatcher.FILE_READER.file_exists = MagicMock(return_value=False)
+  @patch('os.path.exists')
+  def test_get_puzzles_online(self, mock_exists):
+    mock_exists.return_value = False
     self.test_dispatcher.FILE_SAVER.save_in_file = MagicMock()
     self.test_dispatcher.FILE_SAVER.save_out_file = MagicMock()
 
@@ -41,8 +42,9 @@ class TestGenericTestDispatcher(TestCase):
       self.test_dispatcher.FILE_SAVER.save_in_file.assert_called_with("test_name", test_case)
       self.test_dispatcher.FILE_SAVER.save_out_file.assert_not_called()
 
-  def test_get_expected_results_online(self):
-    self.test_dispatcher.FILE_READER.file_exists = MagicMock(return_value=False)
+  @patch('os.path.exists')
+  def test_get_expected_results_online(self, mock_exists):
+    mock_exists.return_value = False
     self.test_dispatcher.FILE_SAVER.save_out_file = MagicMock()
     self.test_dispatcher.FILE_SAVER.save_in_file = MagicMock()
 
@@ -52,8 +54,9 @@ class TestGenericTestDispatcher(TestCase):
       self.test_dispatcher.FILE_SAVER.save_out_file.assert_called_with("test_name", test_case)
       self.test_dispatcher.FILE_SAVER.save_in_file.assert_not_called()
 
-  def test_file_dispatching_local(self):
-    self.test_dispatcher.FILE_READER.file_exists = MagicMock(return_value=True)
+  @patch('os.path.exists')
+  def test_file_dispatching_local(self, mock_exists):
+    mock_exists.return_value = True
     self.test_dispatcher.FILE_SAVER.save_in_file = MagicMock()
     self.test_dispatcher.FILE_SAVER.save_out_file = MagicMock()
 
@@ -73,7 +76,7 @@ class TestGenericTestDispatcher(TestCase):
     for test_case in test_cases:
       file_name, file_type, expected_result = test_case
       file_path = self.test_dispatcher._get_path_from_name(file_name, file_type)
-      self.assertEqual(expected_result, path.exists(file_path))
+      self.assertEqual(expected_result, os.path.exists(file_path))
 
   def test_get_path_from_name_exception(self):
     f = lambda : self.test_dispatcher._get_path_from_name("test", "wrong")

@@ -23,7 +23,7 @@ class GenericTestDispatcher(TestDispatcherInterface):
   def __dispatch_files(self, name: str, file_id: str, file_type: str):
     file_path = self._get_path_from_name(name, file_type)
 
-    if self.FILE_READER.file_exists(file_path):
+    if path.exists(file_path):
       return self.FILE_READER.read_file(file_path)
 
     file = self.FILE_LOADER.load_file(file_id)
