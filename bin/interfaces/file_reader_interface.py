@@ -6,5 +6,5 @@ class FileReaderInterface (ABC):
     super().__init__()
 
   @abstractmethod
-  def read_file(self, path: str) -> List[str]:
+  def read_file(self, path: str):
     pass

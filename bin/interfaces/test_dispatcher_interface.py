@@ -1,11 +1,11 @@
 from abc import ABC, abstractmethod
-from typing import List, Dict
+from typing import Dict
 from bin.interfaces.file_saver_interface import FileSaverInterface
 from bin.interfaces.file_loader_interface import FileLoaderInterface
 from bin.interfaces.file_reader_interface import FileReaderInterface
 
 class TestDispatcherInterface(ABC):
-  def __init__(self, options: List[Dict]):
+  def __init__(self, options: Dict):
     super().__init__()
     self.FILE_LOADER: FileLoaderInterface = options["file_loader"]
     self.FILE_SAVER: FileSaverInterface = options["file_saver"]
