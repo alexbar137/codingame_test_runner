@@ -9,7 +9,7 @@ class TestGenericSettingsReader(TestCase):
 
   @patch.multiple(FileReaderInterface, __abstractmethods__=set())
   def setUp(self) -> None:
-    self.CORRECT_TEST_CASES_PATH = "correct test cases path"
+    self.CORRECT_BASE_DIR = "correct base dir"
     self.CORRECT_TEST_CASES = [
       {
         "index": 1,
@@ -32,20 +32,19 @@ class TestGenericSettingsReader(TestCase):
     ]
     mock_config_reader = FileReaderInterface()
     mock_config_reader.read_file = MagicMock(return_value={
-      "test_cases_path": self.CORRECT_TEST_CASES_PATH
+      "base_dir": self.CORRECT_BASE_DIR
     })
 
     mock_test_case_reader = FileReaderInterface()
     mock_test_case_reader.read_file = MagicMock(return_value=self.CORRECT_TEST_CASES)
     options = {
-      "settings_path": "test/base/dir",
       "config_reader": mock_config_reader,
       "test_case_reader": mock_test_case_reader
     }
     self.settings_reader = GenericSettingsReader(options)
 
-  def test_get_test_cases_path(self):
-    self.assertEqual(self.CORRECT_TEST_CASES_PATH, self.settings_reader.get_test_cases_path())
+  def test_get_base_dir(self):
+    self.assertEqual(self.CORRECT_BASE_DIR, self.settings_reader.get_base_dir())
 
   def test_get_test_cases(self):
     self.assertEqual(self.CORRECT_TEST_CASES, self.settings_reader.get_test_cases())

@@ -4,7 +4,7 @@ from bin.interfaces.settings_readers_interface import SettingsReaderInterface
 
 class GenericSettingsReader(SettingsReaderInterface):
 
-  def get_test_cases_path(self) -> Dict:
+  def get_base_dir(self) -> Dict:
     pass
 
   def get_test_cases(self) -> Dict:

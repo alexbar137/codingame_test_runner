@@ -3,7 +3,7 @@ from bin.interfaces.file_reader_interface import FileReaderInterface
 from os import path
 
 
-class GenericFileReader(FileReaderInterface):
+class LineByLineFileReader(FileReaderInterface):
   def read_file(self, file_path: str) -> List[str]:
     with open(file_path) as f:
       content = f.readlines()

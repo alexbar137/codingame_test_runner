@@ -6,7 +6,7 @@ from bin.test_mgmt.generic_test_dispatcher import GenericTestDispatcher
 
 class TestGenericTestDispatcherFactory(TestCase):
 
-  @patch('bin.file_helpers.generic_file_reader.GenericFileReader.__init__', return_value=None)
+  @patch('bin.file_helpers.line_by_line_file_reader.LineByLineFileReader.__init__', return_value=None)
   @patch('bin.file_helpers.generic_file_saver.GenericFileSaver.__init__', return_value=None)
   @patch('bin.file_helpers.coding_game_file_loader.CodingGameFileLoader.__init__', return_value=None)
   @patch('bin.test_mgmt.generic_test_dispatcher.GenericTestDispatcher.__init__', return_value=None)
