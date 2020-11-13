@@ -3,7 +3,7 @@ import os
 
 from bin.interfaces.file_saver_interface import FileSaverInterface
 
-class GenericFileSaver(FileSaverInterface):
+class PuzzleFileSaver(FileSaverInterface):
 
   def __init__(self, base_dir: str):
     super().__init__()
