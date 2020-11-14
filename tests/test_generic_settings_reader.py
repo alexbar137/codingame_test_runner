@@ -32,7 +32,8 @@ class TestGenericSettingsReader(TestCase):
     ]
     mock_config_reader = FileReaderInterface()
     mock_config_reader.read_file = MagicMock(return_value={
-      "base_dir": self.CORRECT_BASE_DIR
+      "base_dir": self.CORRECT_BASE_DIR,
+      "test_cases": "test"
     })
 
     mock_test_case_reader = FileReaderInterface()
