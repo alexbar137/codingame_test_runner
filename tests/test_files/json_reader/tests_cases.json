@@ -1,0 +1,299 @@
+{
+  "puzzle": {
+    "forumPostId": "community-puzzle-1d-spreadsheet/110120",
+    "title": "1D Spreadsheet",
+    "id": 505,
+    "hints": [],
+    "level": "easy",
+    "handle": "50581ec1f8bac3d9c540ea4e36eb43ece06",
+    "prettyId": "1d-spreadsheet",
+    "detailsPageUrl": "/training/easy/1d-spreadsheet"
+  },
+  "testType": "PUZZLE",
+  "currentQuestion": {
+    "question": {
+      "testCases": [
+        {
+          "index": 1,
+          "inputBinaryId": 41772404133258,
+          "outputBinaryId": 41772422311279,
+          "label": "Simple dependency"
+        },
+        {
+          "index": 2,
+          "inputBinaryId": 41772444718621,
+          "outputBinaryId": 41772467277639,
+          "label": "Double dependency"
+        },
+        {
+          "index": 3,
+          "inputBinaryId": 41772489349199,
+          "outputBinaryId": 41772508356088,
+          "label": "Subtraction"
+        },
+        {
+          "index": 4,
+          "inputBinaryId": 41772525003896,
+          "outputBinaryId": 41772545372472,
+          "label": "Multiplication"
+        },
+        {
+          "index": 5,
+          "inputBinaryId": 41772564771716,
+          "outputBinaryId": 41772585694481,
+          "label": "No dependencies"
+        },
+        {
+          "index": 6,
+          "inputBinaryId": 41772606068533,
+          "outputBinaryId": 41772628381741,
+          "label": "Coefficients"
+        },
+        {
+          "index": 7,
+          "inputBinaryId": 41772645410669,
+          "outputBinaryId": 41772663434043,
+          "label": "Fibonacci"
+        },
+        {
+          "index": 8,
+          "inputBinaryId": 41772681759223,
+          "outputBinaryId": 41772702591728,
+          "label": "Backward dependency"
+        },
+        {
+          "index": 9,
+          "inputBinaryId": 41772720188863,
+          "outputBinaryId": 41772749931847,
+          "label": "Diamond dependency"
+        },
+        {
+          "index": 10,
+          "inputBinaryId": 41772762281572,
+          "outputBinaryId": 41772789158820,
+          "label": "Accounting is easy"
+        },
+        {
+          "index": 11,
+          "inputBinaryId": 41772805348154,
+          "outputBinaryId": 41772829395385,
+          "label": "Accounting is hard 1"
+        },
+        {
+          "index": 12,
+          "inputBinaryId": 41772842882802,
+          "outputBinaryId": 41772867025162,
+          "label": "Accounting is hard 2"
+        },
+        {
+          "index": 13,
+          "inputBinaryId": 41772885804611,
+          "outputBinaryId": 41772907988256,
+          "label": "Deep Birecursion"
+        }
+      ],
+      "languages": [
+        "Bash",
+        "C",
+        "C#",
+        "C++",
+        "Clojure",
+        "D",
+        "Dart",
+        "F#",
+        "Go",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "Javascript",
+        "Kotlin",
+        "Lua",
+        "ObjectiveC",
+        "OCaml",
+        "Pascal",
+        "Perl",
+        "PHP",
+        "Python3",
+        "Ruby",
+        "Rust",
+        "Scala",
+        "Swift",
+        "TypeScript",
+        "VB.NET"
+      ],
+      "availableLanguages": [
+        {
+          "id": "Bash",
+          "name": "Bash"
+        },
+        {
+          "id": "C",
+          "name": "C"
+        },
+        {
+          "id": "C#",
+          "name": "C#"
+        },
+        {
+          "id": "C++",
+          "name": "C++"
+        },
+        {
+          "id": "Clojure",
+          "name": "Clojure"
+        },
+        {
+          "id": "D",
+          "name": "D"
+        },
+        {
+          "id": "Dart",
+          "name": "Dart"
+        },
+        {
+          "id": "F#",
+          "name": "F#"
+        },
+        {
+          "id": "Go",
+          "name": "Go"
+        },
+        {
+          "id": "Groovy",
+          "name": "Groovy"
+        },
+        {
+          "id": "Haskell",
+          "name": "Haskell"
+        },
+        {
+          "id": "Java",
+          "name": "Java"
+        },
+        {
+          "id": "Javascript",
+          "name": "JavaScript"
+        },
+        {
+          "id": "Kotlin",
+          "name": "Kotlin"
+        },
+        {
+          "id": "Lua",
+          "name": "Lua"
+        },
+        {
+          "id": "ObjectiveC",
+          "name": "Objective-C"
+        },
+        {
+          "id": "OCaml",
+          "name": "OCaml"
+        },
+        {
+          "id": "Pascal",
+          "name": "Pascal"
+        },
+        {
+          "id": "Perl",
+          "name": "Perl"
+        },
+        {
+          "id": "PHP",
+          "name": "PHP"
+        },
+        {
+          "id": "Python3",
+          "name": "Python 3"
+        },
+        {
+          "id": "Ruby",
+          "name": "Ruby"
+        },
+        {
+          "id": "Rust",
+          "name": "Rust"
+        },
+        {
+          "id": "Scala",
+          "name": "Scala"
+        },
+        {
+          "id": "Swift",
+          "name": "Swift"
+        },
+        {
+          "id": "TypeScript",
+          "name": "TypeScript"
+        },
+        {
+          "id": "VB.NET",
+          "name": "VB.NET"
+        }
+      ],
+      "stubGenerator": "read N:int\nloop N read operation:word(5) arg1:word(6) arg2:word(6)\n\nloop N write 1",
+      "id": 619164,
+      "initialId": 619164,
+      "type": "MULTIPLE_LANGUAGES",
+      "statement": "\u003cdiv class\u003d\"statement-body\"\u003e\n\u003cdiv class\u003d\"statement-section statement-goal\"\u003e\n   \u003ch2\u003e\u003cspan class\u003d\"icon icon-goal\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan\u003eGoal \u003c/span\u003e\u003c/h2\u003e\n   \u003cspan class\u003d\"question-statement\"\u003eYou are given a 1-dimensional spreadsheet. You are to resolve the formulae and give the value of all its cells.\u003cbr\u003e\u003cbr\u003eEach input cell\u0027s content is provided as an \u003cvar\u003eoperation\u003c/var\u003e with two operands \u003cvar\u003earg1\u003c/var\u003e and \u003cvar\u003earg2\u003c/var\u003e.\u003cbr\u003e\u003cbr\u003eThere are 4 types of operations:\u003cbr\u003e\u003cconst\u003eVALUE\u003c/const\u003e \u003cvar\u003earg1\u003c/var\u003e \u003cvar\u003earg2\u003c/var\u003e: The cell\u0027s value is \u003cvar\u003earg1\u003c/var\u003e, (\u003cvar\u003earg2\u003c/var\u003e is not used and will be \u0026quot;_\u0026quot; to aid parsing).\u003cbr\u003e\u003cconst\u003eADD\u003c/const\u003e \u003cvar\u003earg1\u003c/var\u003e \u003cvar\u003earg2\u003c/var\u003e: The cell\u0027s value is \u003cvar\u003earg1\u003c/var\u003e + \u003cvar\u003earg2\u003c/var\u003e.\u003cbr\u003e\u003cconst\u003eSUB\u003c/const\u003e \u003cvar\u003earg1\u003c/var\u003e \u003cvar\u003earg2\u003c/var\u003e: The cell\u0027s value is \u003cvar\u003earg1\u003c/var\u003e - \u003cvar\u003earg2\u003c/var\u003e.\u003cbr\u003e\u003cconst\u003eMULT\u003c/const\u003e \u003cvar\u003earg1\u003c/var\u003e \u003cvar\u003earg2\u003c/var\u003e: The cell\u0027s value is \u003cvar\u003earg1\u003c/var\u003e \u0026times; \u003cvar\u003earg2\u003c/var\u003e.\u003cbr\u003e\u003cbr\u003eArguments can be of two types:\u003cbr\u003e\u0026bull; \u003cstrong\u003eReference\u003c/strong\u003e $\u003cvar\u003eref\u003c/var\u003e: If an argument starts with a dollar sign, it is a interpreted as a reference and its value is equal to the value of the cell by that number \u003cvar\u003eref\u003c/var\u003e, 0-indexed.\u003cbr\u003eFor example, \u0026quot;$0\u0026quot; will have the value of the result of the first cell.\u003cbr\u003eNote that a cell can reference a cell \u003cstrong\u003eafter\u003c/strong\u003e itself!\u003cbr\u003e\u003cbr\u003e\u0026bull; \u003cstrong\u003eValue\u003c/strong\u003e \u003cvar\u003eval\u003c/var\u003e: If an argument is a pure number, its value is \u003cvar\u003eval\u003c/var\u003e.\u003cbr\u003eFor example: \u0026quot;3\u0026quot; will have the value \u003cconst\u003e3\u003c/const\u003e.\u003cbr\u003e\u003cbr\u003eThere won\u0027t be any cyclic references: a cell that reference itself or a cell that references it, directly or indirectly.\u003c/span\u003e\n\u003c/div\u003e\n\u003cdiv class\u003d\"statement-section statement-protocol\"\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eInput\u003c/div\u003e\n      \u003cdiv class\u003d\"question-statement-input\"\u003e\u003cstrong\u003eLine 1:\u003c/strong\u003e An integer \u003cvar\u003eN\u003c/var\u003e for the number of cells.\u003cbr\u003e\u003cstrong\u003eNext \u003cvar\u003eN\u003c/var\u003e lines:\u003c/strong\u003e \u003cvar\u003eoperation\u003c/var\u003e \u003cvar\u003earg1\u003c/var\u003e \u003cvar\u003earg2\u003c/var\u003e\u003cbr\u003e\u003cbr\u003e\u003cvar\u003eoperation\u003c/var\u003e is one of { \u003cconst\u003eVALUE\u003c/const\u003e, \u003cconst\u003eADD\u003c/const\u003e, \u003cconst\u003eSUB\u003c/const\u003e, \u003cconst\u003eMULT\u003c/const\u003e }\u003cbr\u003e\u003cvar\u003earg1\u003c/var\u003e and \u003cvar\u003earg2\u003c/var\u003e are either a number (\u0026quot;-?[0-9]+\u0026quot;), a reference (\u0026quot;\\$[0-9]+\u0026quot;) or nothing \u0026quot;_\u0026quot;.\u003c/div\u003e\n   \u003c/div\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eOutput\u003c/div\u003e\n      \u003cdiv class\u003d\"question-statement-output\"\u003e\u003cstrong\u003e\u003cvar\u003eN\u003c/var\u003e lines:\u003c/strong\u003e the value of each cell, one value per line, from cell\u0026nbsp;0 to\u0026nbsp;cell \u003cvar\u003eN\u003c/var\u003e\u003c/div\u003e\n   \u003c/div\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eConstraints\u003c/div\u003e\n      \u003cdiv class\u003d\"question-statement-constraints\"\u003e1 \u0026le; \u003cvar\u003eN\u003c/var\u003e \u0026le; 100\u003cbr\u003e-10000 \u0026le; \u003cvar\u003eval\u003c/var\u003e \u0026le; 10000\u003cbr\u003e$0 \u0026le; $\u003cvar\u003eref\u003c/var\u003e \u0026le; $(\u003cvar\u003eN\u003c/var\u003e-1)\u003cbr\u003e\u003cvar\u003eval\u003c/var\u003e \u0026isin;  ℤ\u003cbr\u003e\u003cvar\u003eref\u003c/var\u003e \u0026isin; ℕ\u003cbr\u003eThere are \u003cstrong\u003eno\u003c/strong\u003e cyclic references.\u003c/div\u003e\n   \u003c/div\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eExample\u003c/div\u003e\n      \u003cdiv class\u003d\"statement-inout\"\u003e\n         \u003cdiv class\u003d\"statement-inout-in\"\u003e\n            \u003cdiv class\u003d\"title\"\u003eInput\u003c/div\u003e\n            \u003cpre class\u003d\"question-statement-example-in\"\u003e2\nVALUE 3 _\nADD $0 4\u003c/pre\u003e\n         \u003c/div\u003e\n         \u003cdiv class\u003d\"statement-inout-out\"\u003e\n            \u003cdiv class\u003d\"title\"\u003eOutput\u003c/div\u003e\n            \u003cpre class\u003d\"question-statement-example-out\"\u003e3\n7\u003c/pre\u003e\n         \u003c/div\u003e\n      \u003c/div\u003e\n   \u003c/div\u003e\n\u003c/div\u003e",
+      "duration": 0,
+      "userId": 934381,
+      "contribution": {
+        "moderators": [
+          {
+            "userId": 1908048,
+            "pseudo": "bbb000bbbyyy",
+            "publicHandle": "926af3896cdfb3eb0d1509e5465c74598408091",
+            "enable": false,
+            "avatar": 11709915854496,
+            "cover": 11709922718280
+          },
+          {
+            "userId": 154906,
+            "pseudo": "JBM",
+            "publicHandle": "0d71f9df5da706f9f77c07c34d12480e609451",
+            "enable": false
+          },
+          {
+            "userId": 2007852,
+            "pseudo": "Zorg1",
+            "publicHandle": "ae4dcda11ac0f4cc7369e049d99e90652587002",
+            "enable": false,
+            "avatar": 16542412157988,
+            "cover": 12975896340891
+          }
+        ],
+        "id": 4381,
+        "publicHandle": "4381866fa23775dbfb84eae9cbbd6aa523d0",
+        "type": "PUZZLE_INOUT",
+        "status": "ACCEPTED"
+      },
+      "contributor": {
+        "userId": 934381,
+        "pseudo": "PolyB",
+        "publicHandle": "508bb9db8b154bae1c6e5b8c2db49982183439",
+        "enable": false
+      },
+      "index": 0,
+      "title": "1D Spreadsheet"
+    },
+    "answer": {
+      "code": "import sys\nimport math\n\n# Auto-generated code below aims at helping you parse\n# the standard input according to the problem statement.\n\nn \u003d int(input())\nfor i in range(n):\n    operation, arg_1, arg_2 \u003d input().split()\nfor i in range(n):\n\n    # Write an answer using print\n    # To debug: print(\"Debug messages...\", file\u003dsys.stderr, flush\u003dTrue)\n\n    print(\"1\")\n",
+      "programmingLanguageId": "Python3"
+    }
+  },
+  "direct": false,
+  "questions": [
+    {
+      "questionId": 619164,
+      "title": "1D Spreadsheet",
+      "hasResult": false
+    }
+  ],
+  "testSessionId": 33251235,
+  "testSessionHandle": "33251235199f5ac61d0b2f7a9aaaf37692f306cd",
+  "needAccount": true,
+  "shareable": true,
+  "userId": 1508023,
+  "showReplayPrompt": false
+}
