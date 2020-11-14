@@ -89,10 +89,6 @@ class TestJsonTestCaseReader(TestCase):
     f = lambda: self.test_case_reader.read_file(self.WRONG_TEST_CASES_PATH)
     self.assertRaises(Exception, f)
 
-  def test__validate_file_content(self):
-    f = lambda : self.test_case_reader._validate_file_content(self.WRONG_STRUCTURE)
-    self.assertRaises(Exception, f)
-
   def test_wrong_file_structure(self):
     f = lambda : self.test_case_reader.read_file(self.WRONG_TEST_CASE)
     self.assertRaises(Exception, f)

@@ -10,17 +10,7 @@ class JsonTestCaseReader(FileReaderInterface):
 
     with open(path) as json_file:
       file_content = json.load(json_file)
-      self._validate_file_content(file_content)
       return self.__update_dict_key_names(file_content["currentQuestion"]["question"]["testCases"])
-
-  @staticmethod
-  def _validate_file_content(content):
-    if "currentQuestion" not in content:
-      raise Exception("Invalid file structure")
-    if "question" not in content["currentQuestion"]:
-      raise Exception("Invalid file structure")
-    if "testCases" not in content["currentQuestion"]["question"]:
-      raise Exception("Invalid file structure")
 
   @staticmethod
   def __update_dict_key_names(content):
