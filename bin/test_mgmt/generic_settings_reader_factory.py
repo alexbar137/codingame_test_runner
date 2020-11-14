@@ -8,7 +8,7 @@ from bin.interfaces.settings_reader_factory_interface import SettingsReaderFacto
 class GenericSettingsReaderFactory(SettingsReaderFactoryInterface):
   def get_settings_reader(self) -> GenericSettingsReader:
     options = {
-      "config_reader": YamlConfigReader,
-      "test_case_reader": JsonTestCaseReader
+      "config_reader": YamlConfigReader(),
+      "test_case_reader": JsonTestCaseReader()
     }
     return GenericSettingsReader(options)
