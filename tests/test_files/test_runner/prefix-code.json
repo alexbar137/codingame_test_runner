@@ -1,0 +1,291 @@
+{
+  "puzzle": {
+    "forumPostId": "community-puzzle-prefix-code/186600",
+    "title": "Prefix code",
+    "id": 653,
+    "hints": [],
+    "level": "easy",
+    "handle": "653e5d96071bc616694dbe6b7326282999e",
+    "prettyId": "prefix-code",
+    "detailsPageUrl": "/training/easy/prefix-code"
+  },
+  "testType": "PUZZLE",
+  "currentQuestion": {
+    "question": {
+      "testCases": [
+        {
+          "index": 1,
+          "inputBinaryId": 50867581205060,
+          "outputBinaryId": 50867607777316,
+          "label": "abracadabra"
+        },
+        {
+          "index": 2,
+          "inputBinaryId": 50867622977655,
+          "outputBinaryId": 50867642905631,
+          "label": "Hello World !"
+        },
+        {
+          "index": 3,
+          "inputBinaryId": 50867668213961,
+          "outputBinaryId": 50867686392147,
+          "label": "Extra bit at the end"
+        },
+        {
+          "index": 4,
+          "inputBinaryId": 50867709802369,
+          "outputBinaryId": 50867727919202,
+          "label": "Missing first character"
+        },
+        {
+          "index": 5,
+          "inputBinaryId": 50867745900820,
+          "outputBinaryId": 50867767217454,
+          "label": "Inception"
+        },
+        {
+          "index": 6,
+          "inputBinaryId": 50867786203986,
+          "outputBinaryId": 50867806613425,
+          "label": "Poor table"
+        },
+        {
+          "index": 7,
+          "inputBinaryId": 50867821775731,
+          "outputBinaryId": 50867847484190,
+          "label": "No table !"
+        },
+        {
+          "index": 8,
+          "inputBinaryId": 50867868892303,
+          "outputBinaryId": 50867880500476,
+          "label": "Lonely character"
+        },
+        {
+          "index": 9,
+          "inputBinaryId": 50867904093133,
+          "outputBinaryId": 50867927623224,
+          "label": "ASCII art"
+        },
+        {
+          "index": 10,
+          "inputBinaryId": 50867945927332,
+          "outputBinaryId": 50867969653584,
+          "label": "Lorem ipsum"
+        },
+        {
+          "index": 11,
+          "inputBinaryId": 50867989417000,
+          "outputBinaryId": 50868009670283,
+          "label": "Parallel or not ?"
+        },
+        {
+          "index": 12,
+          "inputBinaryId": 50868022144656,
+          "outputBinaryId": 50868043424579,
+          "label": "Lonely character v2"
+        }
+      ],
+      "languages": [
+        "Bash",
+        "C",
+        "C#",
+        "C++",
+        "Clojure",
+        "D",
+        "Dart",
+        "F#",
+        "Go",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "Javascript",
+        "Kotlin",
+        "Lua",
+        "ObjectiveC",
+        "OCaml",
+        "Pascal",
+        "Perl",
+        "PHP",
+        "Python3",
+        "Ruby",
+        "Rust",
+        "Scala",
+        "Swift",
+        "TypeScript",
+        "VB.NET"
+      ],
+      "availableLanguages": [
+        {
+          "id": "Bash",
+          "name": "Bash"
+        },
+        {
+          "id": "C",
+          "name": "C"
+        },
+        {
+          "id": "C#",
+          "name": "C#"
+        },
+        {
+          "id": "C++",
+          "name": "C++"
+        },
+        {
+          "id": "Clojure",
+          "name": "Clojure"
+        },
+        {
+          "id": "D",
+          "name": "D"
+        },
+        {
+          "id": "Dart",
+          "name": "Dart"
+        },
+        {
+          "id": "F#",
+          "name": "F#"
+        },
+        {
+          "id": "Go",
+          "name": "Go"
+        },
+        {
+          "id": "Groovy",
+          "name": "Groovy"
+        },
+        {
+          "id": "Haskell",
+          "name": "Haskell"
+        },
+        {
+          "id": "Java",
+          "name": "Java"
+        },
+        {
+          "id": "Javascript",
+          "name": "JavaScript"
+        },
+        {
+          "id": "Kotlin",
+          "name": "Kotlin"
+        },
+        {
+          "id": "Lua",
+          "name": "Lua"
+        },
+        {
+          "id": "ObjectiveC",
+          "name": "Objective-C"
+        },
+        {
+          "id": "OCaml",
+          "name": "OCaml"
+        },
+        {
+          "id": "Pascal",
+          "name": "Pascal"
+        },
+        {
+          "id": "Perl",
+          "name": "Perl"
+        },
+        {
+          "id": "PHP",
+          "name": "PHP"
+        },
+        {
+          "id": "Python3",
+          "name": "Python 3"
+        },
+        {
+          "id": "Ruby",
+          "name": "Ruby"
+        },
+        {
+          "id": "Rust",
+          "name": "Rust"
+        },
+        {
+          "id": "Scala",
+          "name": "Scala"
+        },
+        {
+          "id": "Swift",
+          "name": "Swift"
+        },
+        {
+          "id": "TypeScript",
+          "name": "TypeScript"
+        },
+        {
+          "id": "VB.NET",
+          "name": "VB.NET"
+        }
+      ],
+      "stubGenerator": "read n:int\nloop n read b:word(5000) c:int\nread s:word(5000)\n\nwrite abracadabra\n",
+      "id": 639215,
+      "initialId": 639215,
+      "type": "MULTIPLE_LANGUAGES",
+      "statement": "\u003cdiv class\u003d\"statement-body\"\u003e\n\u003cdiv class\u003d\"statement-section statement-goal\"\u003e\n   \u003ch2\u003e\u003cspan class\u003d\"icon icon-goal\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan\u003eGoal \u003c/span\u003e\u003c/h2\u003e\n   \u003cspan class\u003d\"question-statement\"\u003eGiven a fixed set of characters, a code is a table that gives the encoding to use for each character.\u003cbr\u003e\u003cbr\u003eA prefix code is a code with the \u003cstrong\u003eprefix property\u003c/strong\u003e, which is that there is no character with an encoding that is a prefix (initial segment) of the encoding of another character.\u003cbr\u003e\u003cbr\u003e\u003cbr\u003eYour goal is to \u003cstrong\u003edecode\u003c/strong\u003e an encoded string using the given prefix code, or say that is not possible.\u003cbr\u003e\u003cbr\u003eExample of encoding.\u003cbr\u003eGiven the string \u003cconst\u003e\u0026quot;abracadabra\u0026quot;\u003c/const\u003e and the prefix code:\u003cbr\u003e\u003cpre style\u003d\"font-family: monospace\"\u003ea -\u0026gt; 1\u003cbr\u003eb -\u0026gt; 001\u003cbr\u003ec -\u0026gt; 011\u003cbr\u003ed -\u0026gt; 010\u003cbr\u003er -\u0026gt; 000\u003c/pre\u003eThe resulting encoding is: \u003cconst\u003e10010001011101010010001\u003c/const\u003e\u003cbr\u003e\u003cbr\u003eThus, if your are given the code above and the input \u003cconst\u003e10010001011101010010001\u003c/const\u003e, you should output the string \u003cconst\u003e\u0026quot;abracadabra\u0026quot;\u003c/const\u003e.\u003cbr\u003e\u003cbr\u003eWith the same prefix code, if the input is \u003cconst\u003e0000\u003c/const\u003e, then you should tell that there is an error at index 3. Indeed, the first three characters of this input can be decoded to give an \u0027r\u0027, but that leaves \u003cconst\u003e0\u003c/const\u003e, which cannot be decoded.\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e-\u0026gt; External link:\u003cbr\u003e\u003cbr\u003e\u003cpre style\u003d\"font-family: monospace\"\u003ehttps://en.wikipedia.org/wiki/Prefix_code\u003c/pre\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e-\u0026gt;️ What\u0027s next?\u003cbr\u003e\u003cbr\u003eOnce you have solved this puzzle, you can continue the challenge by building efficient prefix codes:\u003cbr\u003e\u003cpre style\u003d\"font-family: monospace\"\u003ehttps://www.codingame.com/training/medium/huffman-code\u003c/pre\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003cdiv class\u003d\"statement-section statement-protocol\"\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eInput\u003c/div\u003e\n      \u003cdiv class\u003d\"question-statement-input\"\u003e\u003cstrong\u003eLine 1:\u003c/strong\u003e A single integer \u003cvar\u003eN\u003c/var\u003e representing the number of association in the prefix-code table.\u003cbr\u003e\u003cstrong\u003eNext \u003cvar\u003eN\u003c/var\u003e lines:\u003c/strong\u003e A binary code \u003cvar\u003eBi\u003c/var\u003e and an integer \u003cvar\u003eCi\u003c/var\u003e, which tells that the character with ASCII code \u003cvar\u003eCi\u003c/var\u003e will be encoded by \u003cvar\u003eBi\u003c/var\u003e.\u003cbr\u003e\u003cstrong\u003eNext line:\u003c/strong\u003e The binary code \u003cvar\u003eS\u003c/var\u003e of an encoded string.\u003c/div\u003e\n   \u003c/div\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eOutput\u003c/div\u003e\n      \u003cdiv class\u003d\"question-statement-output\"\u003e- If it is not possible to decode the encoded string, print \u003cstrong\u003eDECODE FAIL AT INDEX \u003cvar\u003ei\u003c/var\u003e\u003c/strong\u003e with \u003cvar\u003ei\u003c/var\u003e the first index in the encoded string where the decoding fails (index starts from 0).\u003cbr\u003e- Otherwise print the decoded string.\u003c/div\u003e\n   \u003c/div\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eConstraints\u003c/div\u003e\n      \u003cdiv class\u003d\"question-statement-constraints\"\u003e0 \u0026le; \u003cvar\u003eN\u003c/var\u003e, \u003cvar\u003eC\u003c/var\u003e \u0026le; 127\u003cbr\u003e\u003cvar\u003eS\u003c/var\u003e and the binary codes \u003cvar\u003eBi\u003c/var\u003e have a length less that or equal to 5000.\u003c/div\u003e\n   \u003c/div\u003e\n   \u003cdiv class\u003d\"blk\"\u003e\n      \u003cdiv class\u003d\"title\"\u003eExample\u003c/div\u003e\n      \u003cdiv class\u003d\"statement-inout\"\u003e\n         \u003cdiv class\u003d\"statement-inout-in\"\u003e\n            \u003cdiv class\u003d\"title\"\u003eInput\u003c/div\u003e\n            \u003cpre class\u003d\"question-statement-example-in\"\u003e5\n1 97\n001 98\n000 114\n011 99\n010 100\n10010001011101010010001\u003c/pre\u003e\n         \u003c/div\u003e\n         \u003cdiv class\u003d\"statement-inout-out\"\u003e\n            \u003cdiv class\u003d\"title\"\u003eOutput\u003c/div\u003e\n            \u003cpre class\u003d\"question-statement-example-out\"\u003eabracadabra\u003c/pre\u003e\n         \u003c/div\u003e\n      \u003c/div\u003e\n   \u003c/div\u003e\n\u003c/div\u003e",
+      "duration": 0,
+      "userId": 3380184,
+      "contribution": {
+        "moderators": [
+          {
+            "userId": 3545248,
+            "pseudo": "amkad",
+            "publicHandle": "751ae12ff63a941d8bfb427161faf4408425453",
+            "enable": false,
+            "avatar": 49202166474180
+          },
+          {
+            "userId": 2968035,
+            "pseudo": "DomiKo",
+            "publicHandle": "cf4e1a99c35a5c4b9774dfd98702b03f5308692",
+            "enable": false,
+            "avatar": 46567648927625,
+            "cover": 46570580666110
+          },
+          {
+            "userId": 512097,
+            "pseudo": "Stilgart",
+            "publicHandle": "f6389a8319f07b08072b207feb2572c9790215",
+            "enable": false,
+            "avatar": 29054906001010,
+            "cover": 29054188397690
+          }
+        ],
+        "id": 5268,
+        "publicHandle": "52684c73bdb557e10431a968c95d4ca4609a",
+        "type": "PUZZLE_INOUT",
+        "status": "ACCEPTED"
+      },
+      "contributor": {
+        "userId": 3380184,
+        "pseudo": "chouch",
+        "publicHandle": "1bdbce62604eb92020659b4474ab3a224810833",
+        "enable": false
+      },
+      "index": 0,
+      "title": "Prefix code"
+    },
+    "answer": {}
+  },
+  "direct": false,
+  "questions": [
+    {
+      "questionId": 639215,
+      "title": "Prefix code",
+      "hasResult": false
+    }
+  ],
+  "testSessionId": 33461211,
+  "testSessionHandle": "33461211b6104844274a6a2b16a37bb9a7b63f68",
+  "needAccount": true,
+  "shareable": true,
+  "userId": 1508023,
+  "showReplayPrompt": false
+}

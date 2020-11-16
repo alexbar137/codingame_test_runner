@@ -17,12 +17,12 @@ class TestJsonTestCaseReader(TestCase):
       {
         "puzzle_id": 41772404133258,
         "expected_results_id": 41772422311279,
-        "label": "Simple dependency"
+        "label": "Simpledependency"
       },
       {
         "puzzle_id": 41772444718621,
         "expected_results_id": 41772467277639,
-        "label": "Double dependency"
+        "label": "Doubledependency"
       },
       {
         "puzzle_id": 41772489349199,
@@ -37,7 +37,7 @@ class TestJsonTestCaseReader(TestCase):
       {
         "puzzle_id": 41772564771716,
         "expected_results_id": 41772585694481,
-        "label": "No dependencies"
+        "label": "Nodependencies"
       },
       {
         "puzzle_id": 41772606068533,
@@ -52,32 +52,32 @@ class TestJsonTestCaseReader(TestCase):
       {
         "puzzle_id": 41772681759223,
         "expected_results_id": 41772702591728,
-        "label": "Backward dependency"
+        "label": "Backwarddependency"
       },
       {
         "puzzle_id": 41772720188863,
         "expected_results_id": 41772749931847,
-        "label": "Diamond dependency"
+        "label": "Diamonddependency"
       },
       {
         "puzzle_id": 41772762281572,
         "expected_results_id": 41772789158820,
-        "label": "Accounting is easy"
+        "label": "Accountingiseasy"
       },
       {
         "puzzle_id": 41772805348154,
         "expected_results_id": 41772829395385,
-        "label": "Accounting is hard 1"
+        "label": "Accountingishard1"
       },
       {
         "puzzle_id": 41772842882802,
         "expected_results_id": 41772867025162,
-        "label": "Accounting is hard 2"
+        "label": "Accountingishard2"
       },
       {
         "puzzle_id": 41772885804611,
         "expected_results_id": 41772907988256,
-        "label": "Deep Birecursion"
+        "label": "DeepBirecursion"
       }
     ]
 

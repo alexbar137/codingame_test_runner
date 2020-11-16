@@ -3,8 +3,8 @@ from os import path
 
 class GenericTestDispatcher(TestDispatcherInterface):
   FOLDERS = {
-    "OUT": "in",
-    "IN": "out"
+    "OUT": "out",
+    "IN": "in"
   }
 
   def __init__(self, options):
